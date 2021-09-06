@@ -1,0 +1,59 @@
+GET http://localhost:3001/message
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxMmYzMGEyNTc1ODkzMjQ3ZDI4YTEyYiIsImRpc3BsYXlOYW1lIjoicGV0ZXJlbWlsIiwidXNlcm5hbWUiOiJwZXQzciIsImVtYWlsIjoicGV0M3IuZW1pbEBob3RtYWlsLmNvbSIsImltYWdlIjoic29tZXRoaW5nIGVsc2UiLCJwYXNzd29yZCI6IiQyYiQxMCRneUw2alQ3UjVDOXd0SnZWalh6ZW9PZjJDQ0x2ZWhzQjRCRXp2VFR6ODlOVUFhV2JNeWdUVyIsIl9fdiI6MH0sImlhdCI6MTYzMDYyMTc4OSwiZXhwIjoxNjMwNjIxODA5fQ.pQgWi0mdhgoDQ0h_26kOaxYuO0OXywhJpCYssbytxgo
+
+
+###
+
+POST http://localhost:3001/message/send/user/buglow2332
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoiYnVnbG93MjMzMiIsIl9pZCI6IjYxMzMzMTFiMWNiNDA2ZGViNWExNTEyNCJ9LCJpYXQiOjE2MzA3NTI4OTEsImV4cCI6MTYzMDc1Mzc5MX0.DQ7t0WyJ7vz_b--qHu3RuKHdjBllL9Lk6_PL1YmcBtk
+
+{
+    "messageBody": "this is something"
+}
+
+###
+
+POST http://localhost:3001/auth/login
+Content-Type: application/json
+
+{
+    "username": "pet3r",
+    
+    "password": "password"
+}
+
+###
+
+POST http://localhost:3001/auth/token
+Content-Type: application/json
+
+{"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxMzBiYWVjZWEyOTAxYTU1ZGJmNjk2NiIsImRpc3BsYXlOYW1lIjoiYnVnbG93IiwidXNlcm5hbWUiOiJidXNnbG9zc3cyIiwiZW1haWwiOiJzb21ldGhzaW5nQGdzbWFpbC5jb20iLCJpbWFnZSI6InNvbWV0aGluZyIsInBhc3N3b3JkIjoiJDJiJDEwJEpFOTBpRlB6SzA1TDd2OEd0cXYxZmV6Qi9YZWdNbUhPY2N0TEk3ajhEZGVxM1MwQ0ZjbmtxIiwiX192IjowfSwiaWF0IjoxNjMwNTk5NjQ5fQ.gFNsHR4vDSXYPXzbXQluqptPZ6NGXOr4aN47VsD7u20"}
+
+
+###
+
+
+POST http://localhost:3001/auth/register
+Content-Type: application/json
+
+{
+    "displayName": "buglow",
+    "username": "busglossswss2",
+    "email": "somethsing@gsmssail.com",
+    "image": "something",
+    "password": "something",
+    "confirmPassword": "something"
+}
+
+###
+
+DELETE http://localhost:3001/auth/logout
+Content-Type: application/json
+
+{"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjYxMmYzMDRkMzEwMDhjMWQ2NzBlMGIzNyIsImRpc3BsYXlOYW1lIjoicGF1bG9lbWlsIiwidXNlcm5hbWUiOiJidWdsb3ciLCJlbWFpbCI6InByb2cucGF1bG9AaG90bWFpbC5jb20iLCJpbWFnZSI6InNvbWV0aGluZyIsInBhc3N3b3JkIjoicGFzc3dvcmQiLCJfX3YiOjB9LCJpYXQiOjE2MzA1NzQ3MTJ9.2HqYB6olvdYipygp1UNqHHo-toYDEDBZDSWeNaJ6uG4"}
+
+###
+GET http://localhost:3001/user/buglow2332
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7InVzZXJuYW1lIjoiYnVnbG93MjMzMiIsIl9pZCI6IjYxMzMzMTFiMWNiNDA2ZGViNWExNTEyNCJ9LCJpYXQiOjE2MzA3NTI4OTEsImV4cCI6MTYzMDc1Mzc5MX0.DQ7t0WyJ7vz_b--qHu3RuKHdjBllL9Lk6_PL1YmcBtk
+
